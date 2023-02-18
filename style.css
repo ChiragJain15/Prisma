@@ -59,7 +59,7 @@ body {
 }
 
 .overlay {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 nav {
@@ -85,6 +85,8 @@ nav ul {
 a {
     text-decoration: none;
     color: aliceblue;
+    text-shadow: 0 0 10px #c0c0c0, 0 0 20px #c0c0c0, 0 0 30px #c0c0c0,
+        0 0 40px #c0c0c0, 0 0 50px #c0c0c0, 0 0 60px #c0c0c0, 0 0 70px #c0c0c0;
 }
 
 .nav-links {
@@ -128,24 +130,35 @@ main {
 
 .title {
     font-size: 3rem;
-    margin: 12rem 0rem 2rem 0rem;
-    color: #23ca5f;
-    text-shadow: 0 0 2.5px #c0c0c0, 0 0 5px #c0c0c0, 0 0 15px #23ca5f;
+    margin: 8rem 0rem 2rem 0rem;
+    color: #ff0081;
+    text-shadow: 0 0 2.5px #ddf6c3, 0 0 5px #ddf6c3, 0 0 15px #ff78bc;
 }
 
 main h1 {
     font-size: 9rem;
     padding: 0rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255);
     text-shadow: 0 0 10px #c0c0c0, 0 0 20px #c0c0c0, 0 0 30px #c0c0c0,
         0 0 40px #c0c0c0, 0 0 50px #c0c0c0, 0 0 60px #c0c0c0, 0 0 70px #c0c0c0;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 .date {
     font-size: 3.5rem;
     margin: 2rem 0rem 3rem 0rem;
-    color: #23ca5f;
-    text-shadow: 0 0 2.5px #c0c0c0, 0 0 10px #23ca5f;
+    color: #ff0081;
+    text-shadow: 0 0 5px #f4b4d4, 0 0 15px #ff78bc;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.content{
+    font-size: 1.5rem;
+    text-align: center;
+    width: clamp(40ch,75ch,90ch);
+    margin-bottom: 3rem;
+    color: rgba(255, 255, 255);
+    font-weight: 500;
 }
