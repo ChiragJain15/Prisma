@@ -26,7 +26,8 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #hero-bg {
@@ -60,6 +61,9 @@ body {
 }
 
 nav {
+    z-index: 10;
+    width: 100%;
+    position: fixed;
     background-image: linear-gradient(
         to right,
         rgba(255, 255, 255, 0.2),
@@ -86,13 +90,13 @@ nav ul {
 a {
     text-decoration: none;
     color: aliceblue;
-    text-shadow: 0 0 10px #c0c0c0, 0 0 20px #c0c0c0, 0 0 30px #c0c0c0,
-        0 0 40px #c0c0c0, 0 0 50px #c0c0c0, 0 0 60px #c0c0c0, 0 0 70px #c0c0c0;
 }
 
 .nav-links {
     padding: 0rem 2rem;
     opacity: 0.8;
+    text-shadow: 0 0 10px #c0c0c0, 0 0 20px #c0c0c0, 0 0 30px #c0c0c0,
+        0 0 40px #c0c0c0, 0 0 50px #c0c0c0, 0 0 60px #c0c0c0, 0 0 70px #c0c0c0;
 }
 
 .nav-links:hover {
@@ -131,7 +135,7 @@ main {
 
 .title {
     font-size: 3rem;
-    margin: 8rem 0rem 2rem 0rem;
+    margin: 3em 0rem 2rem 0rem;
     color: #ff0081;
     text-shadow: 0 0 2.5px #ddf6c3, 0 0 5px #ddf6c3, 0 0 15px #ff78bc;
 }
@@ -155,11 +159,21 @@ main h1 {
     font-weight: 700;
 }
 
-.content{
+.content {
     font-size: 1.5rem;
     text-align: center;
-    width: clamp(40ch,75ch,90ch);
+    width: clamp(40ch, 75ch, 90ch);
     margin-bottom: 3rem;
     color: rgba(255, 255, 255);
     font-weight: 500;
+}
+
+.two {
+    background-color: #a7c7e7;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 30%;
+    }
 }

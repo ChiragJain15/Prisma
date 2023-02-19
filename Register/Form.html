@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="Form.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Poppins:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="shortcut icon"
+            href="../logoPrisma.png"
+            type="image/x-icon"
+        />
+        <title>Prisma/Registration form</title>
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <img src="../logoPrisma.png" alt="prisma logo" />
+            <ul>
+                <li class="nav-links"><a href="../index.html">HOME</a></li>
+                <li class="nav-links"><a href="#">EVENTS</a></li>
+                <li class="nav-links"><a href="#">TEAMS</a></li>
+                <li class="nav-links"><a href="#">SPONSORS</a></li>
+                <li>
+                    <a href="#" id="reg-nav">REGISTER</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="cont-top">
+            <h1 class="heading">Register yourself here!</h1>
+            <hr class="head" />
+        </div>
+        <div class="container">
+            <div class="control-group">
+                <input
+                    id="fullname"
+                    type="text"
+                    name="fullname"
+                    placeholder="Enter your full name"
+                />
+
+                <label for="firstname">
+                    <span>First Name</span>
+                </label>
+            </div>
+            <div class="control-group">
+                <input
+                    id="email"
+                    type="text"
+                    name="email"
+                    placeholder="Enter your email id"
+                />
+
+                <label for="email">
+                    <span>Email</span>
+                </label>
+            </div>
+            <div class="control-group">
+                <input
+                    id="Idno"
+                    type="text"
+                    name="Idno"
+                    placeholder="Enter your Registeration Number / Aadhar number"
+                />
+
+                <label for="Idno">
+                    <span>Registeration Number / Aadhar number</span>
+                </label>
+            </div>
+            <div class="control-group">
+
+                <input
+                    id="Idno"
+                    type="text"
+                    name="Idno"
+                    placeholder="Enter your Registeration Number / Aadhar number"
+                />
+
+                <label for="Idno">
+                    <span>Registeration Number / Aadhar number</span>
+                </label>
+            </div>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="container">
+            <form action="#">
+                <div class="labels">
+                    <label for="fname">Full name:</label>
+                    <label for="outsider">Are you a Srm Student: </label>
+                    <label for="email">Email: </label>
+                </div>
+                <div class="fields">
+                    <input
+                        type="text"
+                        id="fname"
+                        name="fname"
+                        placeholder="Full name"
+                    />
+                    <div>
+                        <input
+                            type="radio"
+                            placeholder=""
+                            id="outsider"
+                            name="outsider"
+                            value="yes"
+                            required
+                        />
+                        Yes
+                        <input
+                            type="radio"
+                            placeholder=""
+                            id="outsider"
+                            name="outsider"
+                            value="no"
+                            required
+                        />
+                        No
+                    </div>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Email"
+                    />
+                </div>
+            </form>
+        </div> -->
+        <!--
+            <div class="card-details">
+                <div class="card-box">
+                    <span class="details">Email ID</span>
+                    <input type="email" placeholder="Enter your email..." required>
+                </div>
+            </div>
+            <div class="card-details">
+                <div class="card-box">
+                    <span class="details">Registration Number / Aadhar Number</span>
+                    <input type="text" placeholder="Registration or Aadhar Number..." required>
+                </div>
+            </div>
+            <div class="circle-form">
+                <span class="circle-title">Do you need Transportation?</span>
+                <div class="category">
+                    <input type="radio" placeholder="" required> Yes <br><br>
+                    <input type="radio" placeholder="" required> No
+                </div>
+            </div>
+            <div class="circle-form">
+                <span class="circle-title">DRAMA EVENTS</span>
+                <div class="category">
+                    <input type="radio" placeholder="" required> Mono Acting <br><br>
+                    <input type="radio" placeholder="" required> Film Making <br><br>
+                    <input type="radio" placeholder="" required> Nukkad Naatak <br><br>
+                </div>
+            </div>
+            <div class="circle-form">
+                <span class="circle-title">DANCE EVENTS</span>
+                <div class="category">
+                    <input type="radio" placeholder="" required> Solo Dance(Classical) <br><br>
+                    <input type="radio" placeholder="" required> Solo Dance(General) <br><br>
+                    <input type="radio" placeholder="" required> Duo Dance(Any form) <br><br>
+                    <input type="radio" placeholder="" required> Group Dance(Any form) <br><br>
+                </div>
+            </div>
+            <div class="circle-form">
+                <span class="circle-title">Music EVENTS</span>
+                <div class="category">
+                    <input type="radio" placeholder="" required> Solo Singing <br><br>
+                    <input type="radio" placeholder="" required> Group Singing <br><br>
+                    <input type="radio" placeholder="" required> Instrumental Singing <br><br>
+                    <input type="radio" placeholder="" required> Rap Competition <br><br>
+                    <input type="radio" placeholder="" required> Battle of Bands <br><br>
+                </div>
+            </div>
+            <div class="circle-form">
+                <span class="circle-title">Art and Craft EVENTS</span>
+                <div class="category">
+                    <input type="radio" placeholder="" required> Book Cover Desgining <br><br>
+                    <input type="radio" placeholder="" required> Still life painting <br><br>
+                    <input type="radio" placeholder="" required> Tote Bag Painting <br><br>
+                    <input type="radio" placeholder="" required> Chandelier/Wall Hanging <br><br>
+                </div>
+            </div>
+            <div class="circle-form">
+                <span class="circle-title">Photography EVENTS</span>
+                <div class="category">
+                    <input type="radio" placeholder="" required> Theme Photography <br><br>
+                    <input type="radio" placeholder="" required> Campus Clicks <br><br>
+                </div>
+            </div>
+            <div class="circle-form">
+                <span class="circle-title">Literary EVENTS</span>
+                <div class="category">
+                    <input type="radio" placeholder="" required> Pitch-O-Plot(Pitch a story plot or short story)
+                    <br><br>
+                    <input type="radio" placeholder="" required> Defening Echoes(Slam poetry) <br><br>
+                    <input type="radio" placeholder="" required> TO BEE OR NOT TO BEE(Spell Bee) <br><br>
+                    <input type="radio" placeholder="" required> SATIRE-AVAGANZA(To build a poem from a given one liner)
+                    <br><br>
+                </div>
+            </div>
+            <div class="circle-form">
+                <span class="circle-title">Gaming EVENTS (PC)</span>
+                <div class="category">
+                    <input type="radio" placeholder="" required> Valorant <br><br>
+                    <input type="radio" placeholder="" required> Overwatch 2 <br><br>
+                </div>
+            </div>
+            <div class="circle-form">
+                <span class="circle-title">Gaming EVENTS (Controller Gaming)</span>
+                <div class="category">
+                    <input type="radio" placeholder="" required> FIFA <br><br>
+                    <input type="radio" placeholder="" required> Rocket League <br><br>
+                    <input type="radio" placeholder="" required> Tekkan <br><br>
+                </div>
+            </div>
+            <div class="circle-form">
+                <span class="circle-title">Gaming EVENTS (RetroGaming)</span>
+                <div class="category">
+                    <input type="radio" placeholder="" required> Mario <br><br>
+                    <input type="radio" placeholder="" required> Roadrash <br><br>
+                    <input type="radio" placeholder="" required> Contra <br><br>
+                </div>
+            </div>
+            <div class="circle-form">
+                <span class="circle-title">Fashion EVENTS</span>
+                <div class="category">
+                    <input type="radio" placeholder="" required> Fashion show (individual) <br><br>
+                    <input type="radio" placeholder="" required> Fashion show (Group event) <br><br>
+                </div>
+            </div>
+            <div class="card-details">
+                <div class="card-box">
+                    <span class="details">For group Events , Mention Names of team memeber</span>
+                    <input type="text" placeholder="Your Answer...">
+                </div>
+            </div>
+            <div class="card-details">
+                <div class="card-box">
+                    <span class="details">Payment Categories (Refer to the below categories)</span>
+                    <span class="details"></span>
+                    <span class="details">Solo Event(Rs 300)</span>
+                    <span class="details">Duet Event(Rs 500)</span>
+                    <span class="details">Gaming Group Event(Rs 600)</span>
+                    <span class="details">Group Event(Not inclusive of Gaming group event)(Rs 1000)</span>
+                </div>
+            </div>
+            <div class="card-details">
+                <div class="card-box">
+                    <span class="details">For further payment process</span>
+                    <span class="details">Contact</span>
+                    <span class="details">Bhavjot - +91 9643244024</span>
+                </div>
+            </div>
+
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+        </form> -->
+    </body>
+</html>
