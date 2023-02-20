@@ -12,13 +12,14 @@
         />
         <link rel="stylesheet" href="./style.css" />
         <link rel="stylesheet" href="./bubblybutton.css" />
+        <link rel="stylesheet" href="./mob-nav.css" />
         <script src="./script.js" defer></script>
         <link rel="shortcut icon" href="./logoPrisma.png" type="image/x-icon" />
         <title>Prisma 2K23</title>
     </head>
     <body>
         <div id="loading">
-            <img src="./logoPrisma.png" alt="Prisma Logo" id="loading-icon">
+            <img src="./logoPrisma.png" alt="Prisma Logo" id="loading-icon" />
         </div>
         <div id="hero-bg">
             <img src="./hero/1.png" alt="" class="bg" />
@@ -37,7 +38,7 @@
         </div>
         <nav id="navbar">
             <img src="./logoPrisma.png" alt="prisma logo" />
-            <ul>
+            <ul class="desk-nav">
                 <li class="nav-links"><a href="#">HOME</a></li>
                 <li class="nav-links"><a href="#">EVENTS</a></li>
                 <li class="nav-links"><a href="#">TEAMS</a></li>
@@ -47,6 +48,20 @@
                 </li>
             </ul>
         </nav>
+        <div class="hidden">
+            <div class="mob-nav">
+                <ul>
+                    <li class="nav-links"><a href="#">HOME</a></li>
+                    <li class="nav-links"><a href="#">EVENTS</a></li>
+                    <li class="nav-links"><a href="#">TEAMS</a></li>
+                    <li class="nav-links"><a href="#">SPONSORS</a></li>
+                    <li class="nav-links">
+                        <a href="./Register/Form.html">REGISTER</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <div class="page">
             <main>
                 <h2 class="title">The Annual Techno Cultural Fest</h2>
@@ -59,10 +74,13 @@
                     nights of your life with - PRISMA 2K22
                 </h3>
                 <a href="./Register/Form.html"
-                    ><button class="bubbly-button animate">REGISTER NOW</button></a
+                    ><button class="bubbly-button animate">
+                        REGISTER NOW
+                    </button></a
                 >
             </main>
         </div>
         <div class="page two"></div>
+        <div class="page three"></div>
     </body>
 </html>

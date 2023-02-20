@@ -1,3 +1,7 @@
+html{
+    font-size: 62.5%;
+}
+
 .bubbly-button {
     font-family: 'Montserrat', 'Arial', sans-serif;
     font-weight: 700;
@@ -100,5 +104,23 @@
         background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%,
             95% 70%, 110% 10%;
         background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 35%;
+    }
+    .content {
+        font-size: 2.5rem;    
+        width: clamp(30ch, 40ch, 70ch);
+    }
+    .bubbly-button {
+        font-size: 2.5em;
+        padding: 1em 2em;
+        color: #fff;
+        border-radius: 0.5rem;
+        transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+        box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
     }
 }
