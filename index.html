@@ -10,16 +10,24 @@
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Poppins:wght@300;400;700&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="./style.css" />
-        <link rel="stylesheet" href="./bubblybutton.css" />
-        <link rel="stylesheet" href="./mob-nav.css" />
+        <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="./styles/navbar.css" />
+        <link rel="stylesheet" href="./styles/bubblybutton.css" />
         <script src="./script.js" defer></script>
-        <link rel="shortcut icon" href="./logoPrisma.png" type="image/x-icon" />
-        <title>Prisma 2K23</title>
+        <link
+            rel="shortcut icon"
+            href="./Assets/logoPrisma.png"
+            type="image/x-icon"
+        />
+        <title>Prisma 2K23 | The Annual Techno Cultural Fest</title>
     </head>
     <body>
         <div id="loading">
-            <img src="./logoPrisma.png" alt="Prisma Logo" id="loading-icon" />
+            <img
+                src="./Assets/logoPrisma.png"
+                alt="Prisma Logo"
+                id="loading-icon"
+            />
         </div>
         <div id="hero-bg">
             <img src="./hero/1.png" alt="" class="bg" />
@@ -33,18 +41,28 @@
             <img src="./hero/9.png" alt="" class="bg" />
             <img src="./hero/10.png" alt="" class="bg" />
             <img src="./hero/11.png" alt="" class="bg" />
-            <img src="./hero/12.png" alt="" class="bg" />
+            <!-- <img src="./hero/12.png" alt="" class="bg" /> -->
             <div class="bg overlay"></div>
         </div>
         <nav id="navbar">
-            <img src="./logoPrisma.png" alt="prisma logo" />
+            <img
+                src="./Assets/logoPrisma.png"
+                alt="prisma logo"
+                id="hamburger"
+            />
             <ul class="desk-nav">
                 <li class="nav-links"><a href="#">HOME</a></li>
-                <li class="nav-links"><a href="#">EVENTS</a></li>
-                <li class="nav-links"><a href="#">TEAMS</a></li>
-                <li class="nav-links"><a href="#">SPONSORS</a></li>
+                <li class="nav-links">
+                    <a href="./pages/Events.html">EVENTS</a>
+                </li>
+                <li class="nav-links">
+                    <a href="./pages/Teams.html">TEAMS</a>
+                </li>
+                <li class="nav-links">
+                    <a href="./pages/sponsor.html">SPONSORS</a>
+                </li>
                 <li>
-                    <a href="./Register/Form.html" id="reg-nav">REGISTER</a>
+                    <a href="./pages/Form.html" id="reg-nav">REGISTER</a>
                 </li>
             </ul>
         </nav>
@@ -52,11 +70,17 @@
             <div class="mob-nav">
                 <ul>
                     <li class="nav-links"><a href="#">HOME</a></li>
-                    <li class="nav-links"><a href="#">EVENTS</a></li>
-                    <li class="nav-links"><a href="#">TEAMS</a></li>
-                    <li class="nav-links"><a href="#">SPONSORS</a></li>
                     <li class="nav-links">
-                        <a href="./Register/Form.html">REGISTER</a>
+                        <a href="./pages/Events.html">EVENTS</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="./pages/Teams.html">TEAMS</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="./pages/sponsor.html">SPONSORS</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="./pages/Form.html">REGISTER</a>
                     </li>
                 </ul>
             </div>
@@ -71,9 +95,9 @@
                     Evenings turning into Nights, Friends turning into Family. A
                     2-day fun-filled event that will leave you with Memories of
                     a Lifetime! Get Ready to witness the most Unforgettable
-                    nights of your life with - PRISMA 2K22
+                    nights of your life with - PRISMA 2K23
                 </h3>
-                <a href="./Register/Form.html"
+                <a href="./pages/Form.html"
                     ><button class="bubbly-button animate">
                         REGISTER NOW
                     </button></a

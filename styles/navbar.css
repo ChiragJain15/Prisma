@@ -1,0 +1,126 @@
+/* navbar */
+
+nav {
+    z-index: 30;
+    width: 100%;
+    position: fixed;
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.05)
+    );
+    backdrop-filter: blur(5px);
+    display: flex;
+    padding: 2rem 8rem;
+    justify-content: space-between;
+}
+
+.hidden {
+    height: 100vh;
+    width: 100%;
+    z-index: -2;
+    position: absolute;
+    overflow: hidden;
+}
+
+nav img {
+    width: 8rem;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding-top: 2.25rem;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav-links {
+    padding: 0rem 2rem;
+    opacity: 0.8;
+    text-shadow: 0 0 10px #c0c0c0, 0 0 20px #c0c0c0, 0 0 30px #c0c0c0,
+        0 0 40px #c0c0c0, 0 0 50px #c0c0c0, 0 0 60px #c0c0c0, 0 0 70px #c0c0c0;
+}
+
+.nav-links:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+nav ul li {
+    transition: all 200ms ease-in-out;
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+}
+
+#reg-nav {
+    border: solid 0.25rem rgba(255, 255, 255, 0.8);
+    padding: 0.6rem 2rem;
+    opacity: 0.8;
+    transition: all 200ms ease-in-out;
+}
+
+#reg-nav:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.mob-nav {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    transform: scale(0);
+    background-color: #f6d895;
+}
+
+.ham-menu {
+    display: none;
+}
+
+.show2 {
+    z-index: 20;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 30%;
+    }
+    .content {
+        font-size: 2.5rem;
+        width: clamp(30ch, 40ch, 70ch);
+    }
+    nav {
+        padding: 2rem 3rem;
+    }
+    .mob-nav {
+        transition: all 1s ease-in-out;
+        transform: translateX(100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mob-nav ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 5rem;
+    }
+    .desk-nav {
+        transform: scale(0);
+    }
+    .show {
+        transform: translateX(0%);
+    }
+
+    .ham-menu {
+        display: unset;
+    }
+}

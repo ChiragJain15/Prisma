@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #121212;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: none;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    text-decoration: none;
+    margin: 0 0 1rem;
+    padding: 0 0 1rem;
+  }
+  
+  
+  h3 {
+    color: white;
+    text-align: center;
+    padding-top: 3rem;
+  }
+  
+  img {
+    width: 18rem;
+  }
+  
+  .card {
+    overflow: hidden;
+    width: 18rem;
+    height: 24rem;
+    cursor: pointer;
+  }
+  
+  .overlay {
+    width: 18rem;
+    height: 24rem;
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+  }
+  
+  p {
+    text-align: center;
+    width: 11.5rem;
+    margin: 3.25rem;
+    line-height: 2rem;
+    position: absolute;
+    color: white;
+  }
+  
+  .card:hover .overlay {
+    -webkit-transform: translateY(-103%);
+            transform: translateY(-103%);
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .card:hover img {
+    -webkit-transform: translateY(-2%);
+            transform: translateY(-2%);
+  }
