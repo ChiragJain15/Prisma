@@ -31,7 +31,7 @@ body {
     align-items: center;
 }
 
-.container-form div {
+.container-form > div {
     width: 47%;
     height: 65vh;
     border-radius: 10%;
@@ -42,12 +42,24 @@ body {
     flex-direction: column;
     font-weight: 500;
     justify-content: space-around;
+    align-items: center;
 }
 
 .left-form {
     padding: 8rem 2rem;
     font-size: 1.5rem;
 }
+
+.right-form {
+    font-size: 1.5rem;
+    padding: 8rem 2rem;
+}
+
+.form-comp {
+    margin: 2rem 0;
+}
+
+
 
 h1 {
     z-index: 10;
@@ -75,7 +87,7 @@ h2 {
         display: flex;
         flex-direction: column;
     }
-    .container-form div {
+    .container-form>div {
         height: 35vh;
         width: 100%;
         align-items: center;

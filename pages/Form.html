@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../styles/style.css" />
         <link rel="stylesheet" href="../styles/navbar.css" />
         <link rel="stylesheet" href="../styles/Form.css" />
+        <link rel="stylesheet" href="../styles/input.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <script src="../script.js" defer></script>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,7 +51,7 @@
         <div class="hidden">
             <div class="mob-nav">
                 <ul>
-                    <li class="nav-links"><a href="#">HOME</a></li>
+                    <li class="nav-links"><a href="../index.html">HOME</a></li>
                     <li class="nav-links">
                         <a href="../pages/Events.html">EVENTS</a>
                     </li>
@@ -100,15 +101,52 @@
         <div class="container-form">
             <div class="left-form">
                 <h2>NOTE</h2>
-                <p>1. Identity Card is mandatory for the registration process.<br/>
-                    2. The ID Card is required to be uploaded on the website portal.<br/>
-                    3. The Original ID Card will also be checked at the entry gate on the day of the fest.
+                <p>
+                    1. Identity Card is mandatory for the registration
+                    process.<br />
+                    2. The ID Card is required to be uploaded on the website
+                    portal.<br />
+                    3. The Original ID Card will also be checked at the entry
+                    gate on the day of the fest.
                 </p>
                 <h3>*Early Bird Tickets are on Sale, Limited Time Offer!*</h3>
                 <p>For any Questions and Queries, Scan the QR Code:-</p>
-                <img src="../Assets/logoPrisma.png" alt="QR CODE">
+                <img src="../Assets/logoPrisma.png" alt="QR CODE" />
             </div>
-            <div class="right-form"></div>
+            <div class="right-form">
+                <div class="login-box">
+                    <h2>Register</h2>
+                    <form action="javascript:submit()" id="myform">
+                        <div class="user-box">
+                            <input type="text" name="username" required />
+                            <label>Full name</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="text" name="email" required />
+                            <label>Email</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="text" name="regno" required />
+                            <label>Registeration no.</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="text" name="aadhar" required />
+                            <label>Aadhar no.</label>
+                        </div>
+                        <div class="check-div">
+                            <label>Are you a SRM Student</label>
+                            <input type="checkbox" name="student" id="check" required />
+                        </div>
+                        <a href="#" onclick="document.getElementById('myform').submit(); return false">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Submit
+                        </a>
+                    </form>
+                </div>
+            </div>
         </div>
     </body>
 </html>
