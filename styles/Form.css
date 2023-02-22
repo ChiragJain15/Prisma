@@ -12,6 +12,7 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #fff;
     display: flex;
+    height: 100vh;
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -33,7 +34,7 @@ body {
     width: 47%;
     height: 65vh;
     border-radius: 10%;
-    background-color:rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
     margin: 2rem;
     display: flex;
@@ -42,22 +43,22 @@ body {
     justify-content: space-around;
 }
 
-.left-form{
+.left-form {
     padding: 8rem 2rem;
     font-size: 1.5rem;
 }
 
-h1{
+h1 {
     z-index: 10;
-    color: white;   
+    color: white;
     margin-top: 15rem;
 }
 
-h2{
+h2 {
     align-self: center;
 }
 
-.container-form img{
+.container-form img {
     width: 10rem;
 }
 
@@ -79,7 +80,7 @@ h2{
         align-items: center;
         text-align: center;
     }
-    .left-form{
+    .left-form {
         order: 1;
     }
 }
