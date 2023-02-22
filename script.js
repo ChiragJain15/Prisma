@@ -18,7 +18,7 @@ const days = document.getElementById('days');
 const minutes = document.getElementById('minutes');
 const hours = document.getElementById('hours');
 const seconds = document.getElementById('seconds');
-const date = '15 Mar 2023';
+const date = '17 Mar 2023';
 const goal = new Date(date);
 
 function counter() {
