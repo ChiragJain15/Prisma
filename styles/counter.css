@@ -1,58 +1,60 @@
-.timer {
+.countdown{
     font-family: 'Red Hat Text', sans-serif;
+    font-size: 0.875rem;
     font-weight: 700;
     height: 100vh;
-    background-color: hsl(235, 16%, 14%);
+    background-color:hsl(235, 16%, 14%);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     background-image: url(../images/bg-stars.svg);
 }
 
-.container-heading {
-    padding-top: 10rem;
+
+.container-heading{
+    padding-top: 18rem;
 }
 
-.container-heading h1 {
-    color: hsl(0, 0%, 100%);
-    text-align: center;
-    font-weight: 700;
+.container-heading h1{
+    color: white;
+    font-size: 5rem;
 }
 
-.container {
+.container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 50%;
     padding: 2rem;
 }
 
-.container-counter {
+.container-counter{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-items: center;  
+    flex-direction: column; 
 }
 
-.container-num {
+.container-num{
     font-size: 3rem;
-    padding: 0rem 2rem;
+    padding: 3rem;
     color: hsl(345, 95%, 68%);
     background-color: hsl(236, 21%, 26%);
     margin: 1rem;
     box-shadow: 0px 10px hsl(234, 17%, 12%);
     border-radius: 0.625rem;
-    height: 12rem;
     display: flex;
     align-items: center;
 }
 
-.container-counter span {
+.container-counter span{
     color: hsl(237, 18%, 59%);
 }
 
-.footer {
-    background-image: url(./images/pattern-hills.svg);
+.footer{
+    background-image: url(../images/pattern-hills.svg);
+    background-size: cover;
     height: 20vh;
     width: 100%;
     display: flex;
@@ -60,7 +62,7 @@
     align-items: center;
 }
 
-ul {
+.countdown ul{
     list-style: none;
     display: flex;
     justify-content: center;
@@ -68,35 +70,40 @@ ul {
     margin-top: 2rem;
 }
 
-li {
-    padding: 1rem;
+.countdown li{
+    padding: 2rem;
 }
 
-.links li a {
+.countdown .links li a{
     text-decoration: none;
 }
 
-svg {
-    fill: #8385a9;
+svg{
+    fill: #8385A9;
     transition: 400ms ease-in-out;
 }
 
+
 svg:hover {
-    fill: hsl(345, 95%, 68%);
+    fill:hsl(345, 95%, 68%);
     transform: scale(1.5);
 }
-
-@media screen and (max-width: 700px) {
-    .container-num {
-        font-size: 1rem;
-        padding: 0rem 0.5rem;
+  
+@media screen and (max-width: 700px)
+{
+    .container-num{
+        font-size: 4rem;
+        padding: 3rem;
         color: hsl(345, 95%, 68%);
         background-color: hsl(236, 21%, 26%);
-        margin: 1rem;
+        margin: 2rem;
         box-shadow: 0px 10px hsl(234, 17%, 12%);
         border-radius: 0.625rem;
-        height: 4rem;
         display: flex;
         align-items: center;
     }
+    .container-counter span{
+        font-size: 2rem;
+    }
+    
 }
