@@ -14,191 +14,72 @@ body {
     display: flex;
     width: 100%;
     flex-direction: column;
-    /* background-color: #e899dc;
-    background-image: linear-gradient(315deg, #e899dc 0%, #d387ab 74%); */
-    background-color: #121212;
     align-items: center;
 }
 
-nav {
-    width: 100%;
-    background-image: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0.2),
-        rgba(255, 255, 255, 0.05)
-    );
-    backdrop-filter: blur(5px);
-    display: flex;
-    padding: 2rem 8rem;
-    justify-content: space-between;
+.anim {
+    animation: clouds 25s infinite;
 }
 
-nav img {
-    width: 8rem;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    padding-top: 2.25rem;
-    font-weight: 900;
-    font-size: 2rem;
-}
-
-a {
-    text-decoration: none;
-    color: aliceblue;
-}
-
-.nav-links {
-    padding: 0rem 2rem;
-    opacity: 0.8;
-    text-shadow: 0 0 10px #c0c0c0, 0 0 20px #c0c0c0, 0 0 30px #c0c0c0,
-        0 0 40px #c0c0c0, 0 0 50px #c0c0c0, 0 0 60px #c0c0c0, 0 0 70px #c0c0c0;
-}
-
-.nav-links:hover {
-    transform: scale(1.2);
-    opacity: 1;
-}
-
-nav ul li {
-    transition: all 200ms ease-in-out;
-}
-
-nav ul li:hover {
-    transform: scale(1.2);
-}
-
-#reg-nav {
-    border: solid 0.25rem rgba(255, 255, 255, 0.8);
-    padding: 0.6rem 2rem;
-    opacity: 0.8;
-    transition: all 200ms ease-in-out;
-}
-
-#reg-nav:hover {
-    transform: scale(1.2);
-    opacity: 1;
-}
-
-/* temporary */
-.control-group {
-    padding-top: 2rem;
-    position: relative;
-    transform: translate3d(0, 0, 0);
-    margin-bottom: 2.5rem;
-}
-
-.control-group input[type='text'] {
-    appearance: none;
-    border: 6px solid #43CD64;
-    border-radius: 0;
-    background: #fff;
-    color: #222;
-    font-size: 2rem;
-    font-weight: 500;
-    outline: none;
-    padding: 1.2rem;
-    transition-property: border, padding;
-    transition-duration: 500ms;
-    transition-timing-function: ease;
-    width: 100%;
-}
-
-.control-group input[type='text'] + label {
-    color: #fff;
-    font-size: 1.3rem;
-    display: block;
-    font-weight: 500;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transform-origin: bottom;
-    transition: transform 375ms ease-in-out 0ms;
-}
-
-.control-group input[type='text'] + label span {
-    background: #43CD64;
-    display: block;
-    padding: 2px 20px;
-    transition: transform 1ms ease-in-out 150ms,
-        background 375ms ease-in-out 0ms;
-}
-
-.control-group input[type='text']:focus {
-    border-color: #377DB8;
-    padding-bottom: 2px;
-    padding-top: 30px;
-}
-
-.control-group input[type='text']:focus + label {
-    transform: rotateX(180deg);
-}
-
-.control-group input[type='text']:focus + label span {
-    background: #377DB8;
-    transform: rotateX(180deg);
-}
-/* Registration Form  */
-
-.cont-top {
-    padding: 2rem;
-    margin-top: 2rem;
-    border-radius: 2rem;
-    background-image: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0.2),
-        rgba(255, 255, 255, 0.05)
-    );
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-}
-.container {
+.container-form {
+    z-index: 10;
     width: 80%;
-    padding: 4rem;
-    margin-top: 2rem;
-    border-radius: 2rem;
-    background-image: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0.2),
-        rgba(255, 255, 255, 0.05)
-    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-form div {
+    width: 47%;
+    height: 65vh;
+    border-radius: 10%;
+    background-color:rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    margin: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: space-between;
+    font-weight: 500;
+    justify-content: space-around;
 }
 
-h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    text-align: center;
-    padding-bottom: 1rem;
+.left-form{
+    padding: 8rem 2rem;
+    font-size: 1.5rem;
 }
 
-.head {
-    height: 3px;
-    width: 100%;
-    background: linear-gradient(135deg, #71b7e6, #9b5b);
-    border: none;
+h1{
+    z-index: 10;
+    color: white;   
+    margin-top: 15rem;
 }
 
+h2{
+    align-self: center;
+}
 
-    /* 
-    
+.container-form img{
+    width: 10rem;
+}
 
-    .labels,
-    .fields {
-        font-size: 1.5rem;
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 30%;
+    }
+    .content {
+        font-size: 2.5rem;
+        width: clamp(30ch, 40ch, 70ch);
+    }
+    .container-form {
         display: flex;
         flex-direction: column;
     }
-
-    label {
-        margin: 1rem 0;
+    .container-form div {
+        height: 40vh;
+        width: 100%;
+        align-items: center;
+        text-align: center;
     }
-
-    input {
-        margin: 1rem 0;
-    } */
+    .left-form{
+        order: 1;
+    }
+}

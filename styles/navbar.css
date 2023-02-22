@@ -43,8 +43,8 @@ a {
 .nav-links {
     padding: 0rem 2rem;
     opacity: 0.8;
-    text-shadow: 0 0 10px #c0c0c0, 0 0 20px #c0c0c0, 0 0 30px #c0c0c0,
-        0 0 40px #c0c0c0, 0 0 50px #c0c0c0, 0 0 60px #c0c0c0, 0 0 70px #c0c0c0;
+    /* text-shadow: 0 0 10px #c0c0c0, 0 0 20px #c0c0c0, 0 0 30px #c0c0c0,
+        0 0 40px #c0c0c0, 0 0 50px #c0c0c0, 0 0 60px #c0c0c0, 0 0 70px #c0c0c0; */
 }
 
 .nav-links:hover {
@@ -70,6 +70,11 @@ nav ul li:hover {
 #reg-nav:hover {
     transform: scale(1.2);
     opacity: 1;
+}
+
+.active {
+    transform: scale(1.2) !important;
+    opacity: 1 !important;
 }
 
 .mob-nav {
