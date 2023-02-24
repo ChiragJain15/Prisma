@@ -41,8 +41,8 @@
                 <li class="nav-links">
                     <a href="../pages/sponsor.html">SPONSORS</a>
                 </li>
-                <li>
-                    <a href="./pages/Form.html" id="reg-nav" class="active"
+                <li class="active">
+                    <a href="#" id="reg-nav"
                         >REGISTER</a
                     >
                 </li>
@@ -61,8 +61,8 @@
                     <li class="nav-links">
                         <a href="../pages/sponsor.html">SPONSORS</a>
                     </li>
-                    <li class="nav-links">
-                        <a href="#" class="active">REGISTER</a>
+                    <li class="nav-links active">
+                        <a href="#">REGISTER</a>
                     </li>
                 </ul>
             </div>
@@ -118,26 +118,65 @@
                     <h2>Register</h2>
                     <form action="javascript:submit()" id="myform">
                         <div class="user-box">
-                            <input type="text" name="username" required />
+                            <input
+                                type="text"
+                                name="username"
+                                autocomplete="off"
+                                required
+                            />
                             <label>Full name</label>
                         </div>
                         <div class="user-box">
-                            <input type="text" name="email" required />
+                            <input
+                                type="text"
+                                name="email"
+                                autocomplete="off"
+                                required
+                            />
                             <label>Email</label>
                         </div>
                         <div class="user-box">
-                            <input type="text" name="regno" required />
+                            <input
+                                type="text"
+                                name="regno"
+                                autocomplete="off"
+                                required
+                            />
                             <label>Registeration no.</label>
                         </div>
                         <div class="user-box">
-                            <input type="text" name="aadhar" required />
+                            <input
+                                type="text"
+                                name="aadhar"
+                                autocomplete="off"
+                                required
+                            />
                             <label>Aadhar no.</label>
                         </div>
                         <div class="check-div">
                             <label>Are you a SRM Student</label>
-                            <input type="checkbox" name="student" id="check" required />
+                            <input
+                                type="checkbox"
+                                name="student"
+                                id="check"
+                                onclick="checkBoxForm()"
+                                checked
+                                required
+                            />
                         </div>
-                        <a href="#" onclick="document.getElementById('myform').submit(); return false">
+                        <div class="user-box" id="uni">
+                            <input
+                                type="text"
+                                name="University"
+                                autocomplete="off"
+                                required
+                            />
+                            <label>Your University / College</label>
+                        </div>
+                        <a
+                            href="#"
+                            onclick="document.getElementById('myform').submit(); return false"
+                        >
                             <span></span>
                             <span></span>
                             <span></span>

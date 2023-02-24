@@ -1,17 +1,17 @@
 .login-box {
     width: 100%;
-    padding: 3rem;
 }
 
 .login-box h2 {
-    margin: 0 0 2rem;
-    padding: 0;
+    margin: 0 0 0.5rem;
     color: #fff;
     text-align: center;
 }
 
 .login-box .user-box {
     position: relative;
+    padding: 0.2rem 0;
+
 }
 
 .login-box .user-box input {
@@ -19,7 +19,7 @@
     padding: 1.2rem 0;
     font-size: 1.5rem;
     color: #fff;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     border: none;
     border-bottom: 1px solid #fff;
     outline: none;
@@ -155,6 +155,7 @@
     display: flex;
     justify-content: space-between;
     width: 50%;
+    padding: 0.5rem;
 }
 
 input[type='checkbox'] {
@@ -165,30 +166,42 @@ input[type='checkbox'] {
     height: 2rem;
     display: grid;
     place-content: center;
+    border-radius: 0.2rem;
 }
 
 input[type="checkbox"]::before {
     content: "";
     width: 1rem;
     height: 1rem;
-    border-radius: 50%;
     transform: scale(0);
     box-shadow: inset 1em 1em #03e9f4;
   }
 
   input[type="checkbox"]:checked::before {
     transform: scale(1);
+    transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
   }
+
+
   #check:checked {
     transform: scale(1);
-    border: 1px solid #03e9f4;
+    border: 1px solid #03e9f4; 
   }
 
 
 #check {
     border: 1px solid white;
-    border-radius: 50%;
     cursor: pointer;
+}
+
+#uni{
+    transform: scale(0);
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=checkbox]:checked .uni{
+    transform: scale(1);
 }
 
 @media only screen and (max-width: 600px) {

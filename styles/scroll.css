@@ -1,0 +1,49 @@
+.cont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .field {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5rem;
+  }
+  
+  .mouse {
+    width: 3rem;
+    height: 5rem;
+    border: 3px solid white;
+    border-radius: 60px;
+    position: relative;
+  }
+  .mouse::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 2s infinite;
+    -webkit-animation: wheel 2s infinite;
+  }
+  
+  @keyframes wheel {
+    to {
+      opacity: 0;
+      top: 0.25rem;
+    }
+  }
+  @-webkit-keyframes wheel {
+    to {
+      opacity: 0;
+      top: 0.25rem;
+    }
+  }

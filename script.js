@@ -42,3 +42,13 @@ function counter() {
 counter();
 
 setInterval(counter, 1000);
+
+function checkBoxForm() {
+    var checkBox = document.getElementById("check");
+    var field = document.getElementById("uni");
+    if (checkBox.checked == true){
+      field.style.transform = "scale(0)";
+    } else {
+      field.style.transform = "scale(1)";
+    }
+  }
